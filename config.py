@@ -10,29 +10,29 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6517746779:AAEhhKEW6tLTpRYL9yVLRTNwJVpZsTq0l1k")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7178665162:AAHnxE-Nj4-fLEwsdN-NL__iuvCsJkeddjs")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "29691962"))
+APP_ID = int(os.environ.get("APP_ID", "29759992"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "2c3804001dab0c350acd64f80975de9d")
+API_HASH = os.environ.get("API_HASH", "61f150cdca64b2916fa499d107393140")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002107911566"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002077715264"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6303569936"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5787502520"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = "mongodb+srv://djgojodj01:L5SdudvMdbC9iSec@cluster0.i2dwcdk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+DB_URI = "mongodb+srv://Zero:aloksingh@zero.55iy6nx.mongodb.net/?retryWrites=true&w=majority&appName=Zero"
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002071194656"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6818571055").split()):
+    for x in (os.environ.get("ADMINS", "5787502520 6917183011").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
