@@ -10,29 +10,29 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6993863958:AAHFyPNDfMy6FpnxJK3gTyyvnk6x4x2KArk")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7115897037:AAFCnK9IMF5xkFkaEzMGfoK0osXI2ELW41E")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "29759992"))
+APP_ID = int(os.environ.get("APP_ID", "7490511"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "61f150cdca64b2916fa499d107393140")
+API_HASH = os.environ.get("API_HASH", "88e8c9caaab9eb0acc82e9aa38a13049")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002077715264"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002066551015"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5787502520"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1537076718"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = "mongodb+srv://Zero:aloksingh@zero.55iy6nx.mongodb.net/?retryWrites=true&w=majority&appName=Zero"
+DB_URI = "mongodb+srv://Divine:aloksingh@divine.skabybz.mongodb.net/?retryWrites=true&w=majority"
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002046188296"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5787502520 6973006557 6917183011 1751671094").split()):
+    for x in (os.environ.get("ADMINS", "5787502520 6630667523 6799394593 5205083498 5581569711 6180205492  6129410200 1390773473").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
